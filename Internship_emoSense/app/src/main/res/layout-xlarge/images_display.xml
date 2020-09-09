@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/images_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cecile.testfloat.ImagesDisplayActivity"
+    android:background="@color/backgroundImages">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_one"
+        android:id="@+id/one"
+        app:layout_anchor="@+id/activity_main"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/imageView"
+        android:layout_marginEnd="17dp"
+        android:onClick="ButtonAnswer"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_marginRight="17dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_two"
+        android:id="@+id/two"
+        app:layout_anchor="@+id/activity_main"
+        app:layout_anchorGravity="bottom|right"
+        android:layout_alignTop="@+id/one"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_marginStart="24dp"
+        android:visibility="invisible"
+        android:onClick="ButtonAnswer"/>
+
+</RelativeLayout>

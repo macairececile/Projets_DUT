@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "70196045856",
+    "firebase_url": "https://emosense-68e5b.firebaseio.com",
+    "project_id": "emosense-68e5b",
+    "storage_bucket": "emosense-68e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70196045856:android:445642e1fa85e548",
+        "android_client_info": {
+          "package_name": "com.example.cecile.testfloat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70196045856-c9bcc0032b9r9h78orpqimei8la846n1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cecile.testfloat",
+            "certificate_hash": "e7b7adeb30de1bffe04e1b472c50a89909790b32"
+          }
+        },
+        {
+          "client_id": "70196045856-vnj5u7b6e9eh5vk00hbolg76hqms82gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqu12jrGkyUUTNZZXTDea8rYB7dxxQnpo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70196045856-vnj5u7b6e9eh5vk00hbolg76hqms82gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

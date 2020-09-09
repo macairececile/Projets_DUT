@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary"> #63d386</color>
+    <color name="colorPrimaryDark">#4fb970</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="floating_action_button_color">#FF4081</color>
+    <color name="colorButton">#d81b60</color>
+    <color name="colorButton2">#ec407a</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="loginBackground">#2ECCFA</color>
+    <color name="backgroundHome">#E6E6E6</color>
+    <color name="back">#E0ECF8</color>
+    <color name="backgroundImages">#808080</color>
+
+    <color name="tabsScrollColor">#4fb970</color>
+</resources>

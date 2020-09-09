@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b4c53964-6759-45f7-ba11-5ab59bd384a8" name="IUT" url="http://info-timide.iut.u-bordeaux1.fr/perso/2017/tfrison/Projet/">
+        <fileTransfer host="info-ssh2.iut.u-bordeaux.fr" port="22" rootFolder="/mnt/raxus/www/perso/2017/tfrison/Projet/" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

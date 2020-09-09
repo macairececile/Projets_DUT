@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">emoSense</string>
+    <string name="title">Welcome !</string>
+    <string name="start">Start</string>
+    <string name="settings">Settings</string>
+    <string name="instructions">How does it works ?</string>
+    <string name="details">\nTo start the test, you need to log in thanks to the Google icon in the toolbar.\n\nClick on the start button to begin the test.\n\nYou will need to choose parameters :\nthe type of expression\nthe time (between 1 and 5)\n\nThe test displays 2 images :\n1 neutral and 1 expression.\n\nAnswer to the question at the end with the buttons or the swipe mode.\n\nEnjoy !</string>
+    <string name="settings1">Type of images</string>
+    <string name="settings2">Time (in milliseconds) :</string>
+    <string name="question">Which face is more expressive ?</string>
+    <string name="questionHappy">If the second face is happy,\npress the right button</string>
+    <string name="questionSadness">If the second face is sad,\npress the right button</string>
+    <string name="questionAnger">If the second face is angry,\npress the right button</string>
+    <string name="questionSurprise">If the second face is surprised,\npress the right button</string>
+    <string name="questionDisgust">If the second face is disgusted,\npress the right button</string>
+    <string name="questionFear">If the second face is frightened,\npress the right button</string>
+    <string name="answerYes">YES !</string>
+    <string name="answerNo">NO !</string>
+    <string name="description">Version 1.0.\nEmoSense is an application to measure sensitivity to different emotions from facial expressions.\nFaculty of Computer Science, University of Sunderland, UK.\nDevelopped by Cécile Macaire.</string>
+    <string name="results">Results</string>
+    <string name="aboutus">About us</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="signed_out">Sign Out</string>
+
+    <string name="nextImage">Next</string>
+
+    <string name="google_status_fmt">Google User: %s</string>
+    <string name="google_title_text">Google Sign In</string>
+    <string name="Graph1">Graph 1</string>
+    <string name="Graph2">Graph 2</string>
+    <string name="Graph3">Graph 3</string>
+</resources>

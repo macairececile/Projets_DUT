@@ -1,0 +1,97 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+      google.charts.setOnLoadCallback(drawChart2);
+
+      function drawChart() {
+
+      var dataChart=[['Trials', 'Morphing Percentage', {'type': 'string', 'role': 'style'}]];
+      var tp= [];
+      var tp1=[];
+      var tp2=[];
+      tp.push(0);
+      tp.push(80);
+      tp.push('point { fill-color: #FF0040; }');
+      dataChart.push(tp);
+      tp1.push(0);
+      tp1.push(40);
+      tp1.push('point { fill-color: #01DFA5; }');
+      dataChart.push(tp1);
+      tp2.push(0);
+      tp2.push(5);
+      tp2.push('point { fill-color: #0080FF; }');
+      dataChart.push(tp2);
+      for (var i = 0; i < android.getSizeArray(); i++) {
+         var temp0=[];
+         var temp1=[];
+         var temp2=[];
+         temp0.push(android.numberTrials(i+1));
+         temp1.push(android.numberTrials(i+1));
+         temp2.push(android.numberTrials(i+1));
+         temp0.push(android.array6(i));
+         temp1.push(android.array7(i));
+         temp2.push(android.array8(i));
+         temp0.push('point { fill-color: #FF0040; }');
+         temp1.push('point { fill-color: #01DFA5; }');
+         temp2.push('point { fill-color: #0080FF; }');
+
+         dataChart.push(temp0);
+         dataChart.push(temp1);
+         dataChart.push(temp2);
+        }
+
+      var data = new google.visualization.arrayToDataTable(dataChart);
+      var value = 'point { fill-color: transparent; }';
+
+      var options = {
+          hAxis: { viewWindowMode: 'explicit', viewWindow: { max: 30, min: 0 }, title: 'Trials' },
+          vAxis: { viewWindowMode: 'explicit', viewWindow: { max: 100, min: 0 }, title: 'Morphing Percentage' },
+          title: 'Results',
+          curveType: 'function',
+          lineWidth: 0,
+          legend: { position: 'bottom' },
+          pointSize: 6,
+          pointShape: { type:'diamond', sides: 4}
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+        }
+
+        function drawChart2(){
+            var dataChart=[['Morphing Percentage', 'Proportion']];
+            for (var i = 0; i < android.getSizeData(); i++) {
+                var temp=[];
+                temp.push(android.getPercentagesElement(i));
+                temp.push(android.getCertainProbaElement(i));
+                dataChart.push(temp);
+            }
+            var data = new google.visualization.arrayToDataTable(dataChart);
+            var options = {
+                hAxis: { minValue: 0, title: 'Morphing Percentage' },
+                vAxis: { viewWindowMode: 'explicit', viewWindow: { max: 1, min: 0 }, title: 'Proportion' },
+                title: 'Threshold',
+                curveType: 'function',
+                lineWidth: 0,
+                legend: { position: 'bottom' },
+                pointSize: 6
+            };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart2'));
+
+        chart.draw(data, options);
+
+
+        }
+
+    </script>
+</head>
+<body>
+<div id="curve_chart" style="width: 350px; height: 350px"></div>
+<div id="curve_chart2" style="width: 350px; height: 350px; margin-bottom:100px"></div>
+</body>
+</html>
